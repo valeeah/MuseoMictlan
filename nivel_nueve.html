@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHICUNAMICTLAN</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(img9.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .Titulo{
+            background-color:rgba(105, 103, 103, 0.8);
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .Barra_Boton{
+            margin-top: 5px;
+            background-color: rgb(77, 74, 74);
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        .barra_lateral{
+            position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: rgba(167, 162, 162, 0.8);
+    transition: left 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+        .barra_lateral button{
+            width: 90px;
+            height: 95px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        .barra_lateral button.btnHome{
+            background-image: url(hm.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center left;
+       }
+       .barra_lateral button.btnAnterior{
+        background-image: url(antt.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center left;
+       }
+       .barra_lateral button:hover{
+        background-color: rgb(126, 126, 131);
+       }
+    </style>
+</head>
+<body>
+    <audio src="/Danza a Mictlantecuhtli.mp3" loop="true" autoplay="true">
+
+    </audio>
+    <div class="Titulo">
+        Noveno Nivel: C H I C U N A M I C T L A N
+         </div>
+    <div class="nivel_nueve">
+        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/7vtZzbZ9y_X57QF5_czVClJrPLloPxvLeUrLklTnQ9Y/embed"></iframe>
+
+     
+    </div>
+
+    <!--Boton para mostrar/ocultar la barra lateral-->
+    <button class="Barra_Boton">Mostrar/ocultar barra lateral</button>
+
+    <!--barra lateral para mostrar/ucultar-->
+    <div class="barra_lateral">
+        <button class="btnHome" onclick="location.href='index.html'"></button>
+        <button class="btnAnterior" onclick="location.href='nivel_ocho.html'"> </button>
+    
+    </div>
+    
+    <!--Script para mostrar /ocultar la barra lateral-->
+    <script src="script.js"></script>
+</body>
+</html>
